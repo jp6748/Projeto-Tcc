@@ -1,0 +1,151 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background: #f8f9fa; /* Cor de fundo do corpo */
+  }
+  
+  .barra_de_navegação {
+    /* Mantenha sua estilização existente para a barra de navegação */
+  }
+  
+  .titulo {
+    text-align: center;
+    margin-top: 20px; /* Espaçamento superior */
+  }
+  
+  .subTitulo {
+    text-align: center;
+  }
+  
+  .login-container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid black; /* Adiciona borda preta de 1px */
+    border-radius: 10px;
+    margin-top: 20px; /* Espaçamento superior */
+  }
+  
+  .login-container h2 {
+    text-align: center;
+  }
+  
+  .login-container form {
+    margin-top: 20px;
+  }
+  
+  .login-container label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(5, 5, 5);
+    border-radius: 5px;
+  }
+  
+  .password-container {
+    position: relative;
+  }
+  
+  .password-container input {
+    width: calc(100% - 100px); /* Largura do campo de senha menos a largura do botão */
+  }
+  
+  .password-container button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100px; /* Largura do botão */
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .titulo{
+    text-align: center;
+    background-color:#4fa8e3;  
+  }
+  
+  .subTitulo{
+    text-align: center;
+    border-radius: 20px;
+  }  
+
+  .login-container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 20px; /* Espaçamento superior */
+}
+
+.login-container h2 {
+  text-align: center;
+}
+
+.login-container form {
+  margin-top: 20px;
+}
+
+.login-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-container input {
+  width: calc(100% - 100px); /* Largura do campo de senha menos a largura do botão */
+}
+
+.login-container button {
+    display: block;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    background-color: #4fa8e3; /* Cor azul */
+    color: #fff; /* Cor do texto branco */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+  }
+  
+  .login-container button:hover {
+    background-color: #357ebd; /* Cor azul mais escura ao passar o mouse */
+  }
+
+  .imagem_usuario {
+    text-align: center; /* Centraliza horizontalmente */
+    border-radius: 50%; /* Borda circular */
+    border: 1px solid rgb(5, 5, 5); /* Borda sólida */
+    display: inline-block; /* Garante que a div se ajuste ao tamanho da imagem */
+  }
+  .final {
+    text-align: center;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    background-color: #4fa8e3;
+    padding: 10px;
+    border: 1px solid rgb(153, 153, 153);
+    display: flex; /* Adiciona display flex para flexbox */
+  }

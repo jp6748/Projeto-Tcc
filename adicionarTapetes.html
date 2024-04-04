@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- Título da Página -->
+  <title>Sistema de gerenciamento O.S</title>
+
+  <!-- Metadados -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Estilos CSS -->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Scripts JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Barra de Navegação -->
+  <div class="bara_de navegação">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <!-- Logo ou Imagem -->
+        <div class="imagem_nave">
+          <img src="Paranoa.png" alt="imagem_nave" width="150" height="44">
+        </div>
+        <!-- Links da Navegação -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- Link para a Página Inicial -->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <!-- Link para a Página da Empresa -->
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.paranoa.com.br/empresa/">Empresa</a>
+            </li>
+            <!-- Link para as Páginas Principais -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Principal</a>
+              <ul class="dropdown-menu">
+                <!-- Link para a Página de Mangueiras -->
+                <li><a class="dropdown-item" href="mangueiras.html">Mangueiras</a></li>
+                <!-- Link para a Página de Tapetes -->
+                <li><a class="dropdown-item" href="tapetes.html">Tapetes</a></li>
+                <!-- Link para a Página de Usuário -->
+                <li><a class="dropdown-item" href="usuario.html">Usuario</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- Formulário de Pesquisa -->
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Título Principal -->
+  <div class="titulo">
+    <h1>Sistema de armazenamentos</h1>
+  </div>
+
+  <!-- Subtítulo -->
+  <div class="subTitulo">
+    <h2>Bem-Vindo</h2>
+  </div>
+  <br>
+
+  <!-- Formulário de Pedido de Tapetes de Caminhão -->
+  <div class="login-container2">
+    <!-- Campo de imagem paranoa -->
+    <div class="logo 2">
+      <img src="Paranoa.png">
+    </div>
+    <h2>Formulário de Pedido de Tapetes de Caminhão</h2>
+    <form id="pedidoForm">
+      <!-- Campo para o Numero da Peça -->
+      <label for="numero_peca">Numero da Peça:</label><br>
+      <input type="number" id="nome_peca" name="numero_peca" required><br><br>
+
+      <!-- Campo para o Modelo do Caminhão -->
+      <label for="modelo_caminhao">Modelo do Caminhão:</label><br>
+      <input type="text" id="modelo_caminhao" name="modelo_caminhao" required><br><br>
+
+      <!-- Campo para a Marca do Caminhão -->
+      <label for="marca_caminhao">Marca do Caminhão:</label><br>
+      <input type="text" id="marca_caminhao" name="marca_caminhao" required><br><br>
+
+      <!-- Campo para o Ano de Fabricação do Caminhão -->
+      <label for="ano_fabricacao">Ano de Fabricação do Caminhão:</label><br>
+      <input type="number" id="ano_fabricacao" name="ano_fabricacao" required><br><br>
+
+      <!-- Campo para o Comprimento do Tapete -->
+      <label for="comprimento">Comprimento do Tapete (metros):</label><br>
+      <input type="number" id="comprimento" name="comprimento" step="0.01" required><br><br>
+
+      <!-- Campo para a Largura do Tapete -->
+      <label for="largura">Largura do Tapete (metros):</label><br>
+      <input type="number" id="largura" name="largura" step="0.01" required><br><br>
+
+      <!-- Campo para as Observações Adicionais -->
+      <label for="observacoes">Observações Adicionais:</label><br>
+      <textarea id="observacoes" name="observacoes" rows="4" cols="50"></textarea><br><br>
+
+      <!-- Botão de Envio do Formulário -->
+      <input type="submit" value="Cadastrar Tapetes">
+    </form>
+  </div>
+
+  <!-- Script JavaScript para o Alerta de Confirmação -->
+  <script>
+    document.getElementById("pedidoForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Impede o envio padrão do formulário
+
+        // Exibe um alerta de confirmação
+        if (confirm("Pedido confirmado. Clique em OK para ver os detalhes.")) {
+            this.submit(); // Submete o formulário após o usuário confirmar
+        }
+    });
+  </script>
+</body>
+</html>
+
